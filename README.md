@@ -1,5 +1,6 @@
 # 5-DOF Digital Twin Robotic Arm (ROS 2 + MoveIt)
 ![Uploading rviz_moveit_gazebo.png…]()
+
 ![Uploading real_robotic_arm_5dof.png…]()
 
 ## Overview
@@ -46,3 +47,7 @@ bash src/mycobot_ros2/mycobot_bringup/scripts/mycobot_gazebo_rviz_moveit.sh
 ### 2. Connect and control the real hardware
 ```bash
 ros2 run mycobot_hardware moveit_to_serial.py --ros-args -p port:=/dev/ttyUSB0 -p baudrate:=115200
+```
+
+### Future Work (that i am working on)
+- Integration of Mediapipe to control it with hand gestures
