@@ -1,0 +1,9 @@
+# Default initial positions for mycobot_description's ros2_control fake system
+
+initial_positions:
+  gear01: 0
+  link01: 0
+  link02: 0
+  link03: 0
+  link04: 0
+  link05: 0

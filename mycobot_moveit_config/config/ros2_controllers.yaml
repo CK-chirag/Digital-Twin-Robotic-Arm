@@ -1,0 +1,61 @@
+# controller_manager provides the infrastructure to manage multiple controllers
+# efficiently and robustly using ROS 2 Control.
+controller_manager:
+  ros__parameters:
+    update_rate: 50 # Frequency (in Hz) at which the controllers are updated.
+
+    # JointTrajectoryController: Sends trajectory commands to the arm joints.
+    arm_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    # Gripper controller configured as a JointTrajectoryController for gear-driven control.
+    gripper_controller:
+      type: joint_trajectory_controller/JointTrajectoryController
+
+    # Publishes the current state of all joints to the /joint_states topic.
+    joint_state_broadcaster:
+      type: joint_state_broadcaster/JointStateBroadcaster
+
+# Parameters for the 5-DOF robotic arm
+arm_controller:
+  ros__parameters:
+    joints:
+      - link01
+      - link02
+      - link03
+      - link04
+      - link05
+
+    # The controller expects position commands as input for the arm joints.
+    command_interfaces:
+      - position
+
+    # The controller expects to receive position data feedback from the hardware.
+    state_interfaces:
+      - position
+
+    # Set to true to bypass feedback loops (common for hobby servos/open-loop hardware).
+    open_loop_control: true
+
+    # Allows numerical integration of positions to compute required velocities/accelerations.
+    allow_integration_in_goal_trajectories: true
+
+# Parameters for the end effector / gripper
+gripper_controller:
+  ros__parameters:
+    joints:
+      - gear01
+
+    # The controller expects position commands for the gripper actuator.
+    command_interfaces:
+      - position
+
+    # The controller expects position feedback for the gripper actuator.
+    state_interfaces:
+      - position
+
+    # Operating in open-loop mode for the gripper servo.
+    open_loop_control: true
+
+    # Enable integration for smooth gripper motion profiles.
+    allow_integration_in_goal_trajectories: true
