@@ -1,7 +1,8 @@
 # 5-DOF Digital Twin Robotic Arm (ROS 2 + MoveIt)
-
-<img width="500" height="345" alt="robotic_arm" src="https://github.com/user-attachments/assets/0967396c-b3ab-4ee2-b11a-983f7ea18760" />
-<img width="800" height="450" alt="rviz_moveit_gazebo" src="https://github.com/user-attachments/assets/82bf3f3c-4e15-45b9-8e50-ab9750cd5ccc" />
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/ff0b0b4c-46e9-4cda-803a-bc5f429e98eb" width="48%" />
+  <img src="https://github.com/user-attachments/assets/d9877f2e-458a-4f34-bead-6b4cf45cd684" width="48%" />
+</p>
 
 ## Overview
 This project presents a 5-DOF robotic arm integrated with a digital twin using ROS 2, MoveIt 2, and Gazebo. The system enables motion planning in a simulated environment and executes the planned trajectories on a physical robotic arm in real time via serial communication.
