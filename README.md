@@ -1,7 +1,7 @@
 # 5-DOF Digital Twin Robotic Arm (ROS 2 + MoveIt)
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/ff0b0b4c-46e9-4cda-803a-bc5f429e98eb" width="48%" />
-  <img src="https://github.com/user-attachments/assets/d9877f2e-458a-4f34-bead-6b4cf45cd684" width="48%" />
+  <img src="https://github.com/user-attachments/assets/ff0b0b4c-46e9-4cda-803a-bc5f429e98eb" height="300px" />
+  <img src="https://github.com/user-attachments/assets/d9877f2e-458a-4f34-bead-6b4cf45cd684" height="300px" />
 </p>
 
 ## Overview
