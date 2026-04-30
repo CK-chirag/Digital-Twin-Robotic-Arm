@@ -42,7 +42,8 @@ The robotic arm is a servo-driven manipulator designed for lightweight pick-and-
 
 ### 1. Launch Simulation, RViz, and MoveIt
 ```bash
-bash src/mycobot_ros2/mycobot_bringup/scripts/mycobot_gazebo_rviz_moveit.sh
+cd mycobot_ros2/mycobot_bringup/scripts/
+bash mycobot_gazebo_rviz_moveit.sh
 ```
 
 ### 2. Connect and control the real hardware
